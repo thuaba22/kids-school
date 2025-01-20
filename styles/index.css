@@ -6,3 +6,84 @@
   font-weight: 400px;
   font-style: normal;
 }
+
+/* shared style */
+
+.display-flex {
+  display: flex;
+}
+
+header {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.primary-btn {
+  padding: 10px 60px;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* navbar related styles */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.logo-container {
+  justify-content: center;
+  align-items: center;
+}
+.logo-name {
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0px;
+}
+.logo-image {
+  height: 62px;
+  width: 62px;
+}
+
+.nav-menu-icon {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#home {
+  color: orange;
+  font-weight: bold;
+}
+
+#about {
+  color: skyblue;
+}
+
+#facilities {
+  color: #05d4df;
+}
+
+#admission {
+  color: #5d58ef;
+}
+
+.nav-btn {
+  background-color: orange;
+}
