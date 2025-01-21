@@ -117,6 +117,51 @@ header,
   background-color: black;
 }
 
+/* footer related styles */
+.footer {
+  background-color: #01acfd;
+}
+.footer-container {
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 100px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 60px;
+}
+.footer-logo-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  max-width: 300px;
+  margin-bottom: 35px;
+}
+.logo-des {
+  max-width: 400px;
+  margin: 0px;
+}
+
+.footer-links {
+  padding: 0;
+}
+.footer-item {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+.footer-column-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
 /* mobile device responsiveness */
 
 @media screen and (max-width: 576px) {
