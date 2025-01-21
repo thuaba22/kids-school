@@ -137,4 +137,49 @@ header,
     margin: 0;
     border-bottom: 1px solid orange;
   }
+  /* banner responsiveness */
+  .banner {
+    max-width: 100%;
+    padding: 20px 0px;
+    margin: 0 18px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .banner-heading {
+    font-size: 32px;
+    max-width: 357px;
+  }
+  .banner-des {
+    font-size: 14px;
+    max-width: 357px;
+
+    margin: 18px 0px;
+  }
+
+  .primary-btn {
+    padding: 6px 24px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .banner-img-container {
+    padding: 10px;
+  }
+
+  .banner-image {
+    max-width: 100%;
+    height: auto;
+  }
 }
