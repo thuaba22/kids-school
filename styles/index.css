@@ -17,7 +17,8 @@ body {
   display: flex;
 }
 
-header {
+header,
+.banner {
   max-width: 1160px;
   margin: 0 auto;
 }
@@ -77,7 +78,7 @@ header {
 }
 
 #about {
-  color: skyblue;
+  color: #01acfd;
 }
 
 #facilities {
@@ -90,6 +91,30 @@ header {
 
 .nav-btn {
   background-color: orange;
+}
+
+/* banner related styles */
+
+.banner {
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.banner-heading {
+  font-weight: bold;
+  font-size: 56px;
+  margin: 0px;
+}
+
+.banner-des {
+  font-weight: normal;
+  font-size: 20px;
+  margin: 24px 0px;
+}
+
+.banner-btn {
+  background-color: black;
 }
 
 /* mobile device responsiveness */
