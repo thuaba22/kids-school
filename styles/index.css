@@ -14,6 +14,7 @@
 body {
   margin: 0px;
   padding: 0px;
+  overflow-x: hidden;
 }
 
 .display-flex {
@@ -34,7 +35,11 @@ header,
   border: none;
   border-radius: 12px;
 }
-
+.section-title {
+  font-weight: bold;
+  font-size: 42px;
+  margin: 0;
+}
 /* navbar related styles */
 .navbar {
   justify-content: space-between;
@@ -120,6 +125,75 @@ header,
   background-color: black;
 }
 
+/* curriculum section related styles */
+.curriculum {
+  background-image: url(/assets/bg.png);
+  text-align: center;
+  padding: 60px 0px;
+}
+
+.curriculum-card-container {
+  display: grid;
+  margin: 80px 20px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 28px;
+}
+
+.curriculum-card {
+  padding: 50px 40px;
+  border-radius: 18px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.read-more {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+.curriculum-img {
+  height: 136.7px;
+  width: 136.7px;
+}
+#kinder {
+  background: linear-gradient(
+      180deg,
+      rgba(222, 245, 255, 1) 0%,
+      rgba(237, 250, 255, 0.53) 19%,
+      rgba(255, 255, 255, 0) 40%
+    ),
+    white;
+  border: 1px solid #def5ff;
+}
+#elementary {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 244, 220, 1) 0%,
+      rgba(255, 255, 255, 0) 40%
+    ),
+    white;
+  border: 1px solid #fff4dc;
+}
+#middle {
+  background: linear-gradient(
+      180deg,
+      rgba(238, 225, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 40%
+    ),
+    white;
+  border: 1px solid #f2e8ff;
+}
+
+.curriculum-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 32px 0px;
+}
+.curriculum-des {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
 /* footer related styles */
 .footer {
   background-color: #01acfd;
@@ -198,6 +272,7 @@ header,
     margin: 0 auto;
     flex-direction: column-reverse;
     justify-content: center;
+    align-items: center;
     gap: 20px;
   }
 
