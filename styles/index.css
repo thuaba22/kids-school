@@ -6,6 +6,9 @@
   font-weight: 400px;
   font-style: normal;
 }
+* {
+  box-sizing: border-box;
+}
 
 /* shared style */
 body {
@@ -137,6 +140,11 @@ header,
   max-width: 300px;
   margin-bottom: 35px;
 }
+.footer-logo-name {
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0px;
+}
 .logo-des {
   max-width: 400px;
   margin: 0px;
@@ -183,10 +191,11 @@ header,
     border-bottom: 1px solid orange;
   }
   /* banner responsiveness */
+
   .banner {
     max-width: 100%;
-    padding: 20px 0px;
-    margin: 0 18px;
+    padding: 20px 18px;
+    margin: 0 auto;
     flex-direction: column-reverse;
     justify-content: center;
     gap: 20px;
@@ -220,11 +229,21 @@ header,
   }
 
   .banner-img-container {
+    max-width: 100%;
     padding: 10px;
   }
 
   .banner-image {
+    width: 100%;
+  }
+
+  /* footer responsiveness */
+  .footer-container {
     max-width: 100%;
-    height: auto;
+    margin: 0;
+    padding: 60px 20px;
+
+    flex-direction: column;
+    gap: 32px;
   }
 }
