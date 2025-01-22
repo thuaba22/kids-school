@@ -282,7 +282,7 @@ header,
   padding: 5px 10px;
   border-radius: 20px;
   display: inline-block;
-  margin: -14px 38px;
+  margin: -13px 38px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1;
   position: absolute;
@@ -489,15 +489,27 @@ header,
   /* our stories responsiveness */
 
   .card-container {
-    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .large-card {
-    grid-column: span 1;
+    display: none;
+  }
+  .card-content h4 {
+    font-size: 10px;
+  }
+  .card-date {
+    margin: -13px 20px;
   }
 
   .view-all-container {
-    grid-column: span 1;
+    grid-column: span 2;
+    margin-top: 20px;
   }
 
   /* footer responsiveness */
