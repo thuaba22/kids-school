@@ -38,6 +38,7 @@ header,
 .section-title {
   font-weight: bold;
   font-size: 42px;
+  text-align: center;
   margin: 0;
 }
 /* navbar related styles */
@@ -241,6 +242,94 @@ header,
   transform: translateY(-2px);
 }
 
+/* our stories related styles */
+.card-section {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.52),
+      rgba(254, 163, 1, 0.3)
+    ),
+    url("/assets/bg.png");
+  padding: 60px 0px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1160px;
+  margin: auto;
+  padding-top: 80px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-date {
+  background-color: #3cd8e8;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: -14px 38px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  position: absolute;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 24px;
+  font-weight: bold;
+  max-width: 402px;
+  margin-top: 58px;
+  margin-bottom: 40px;
+}
+
+.card-content p {
+  font-size: 15px;
+  font-weight: 500;
+  max-width: 433px;
+  margin-top: 0px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.large-card {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.view-all-container {
+  grid-column: span 4;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.view-all-button {
+  background-color: #000;
+
+  cursor: pointer;
+}
+
+.view-all-button:hover {
+  background-color: #444;
+}
+
 /* footer related styles */
 .footer {
   background-color: #01acfd;
@@ -360,6 +449,9 @@ header,
   }
 
   /* curriculum responsiveness */
+  .curriculum {
+    padding: 30px 0px;
+  }
   .section-title {
     font-weight: bold;
     font-size: 24px;
@@ -392,6 +484,20 @@ header,
 
   .arrow-navigation {
     display: none;
+  }
+
+  /* our stories responsiveness */
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .large-card {
+    grid-column: span 1;
+  }
+
+  .view-all-container {
+    grid-column: span 1;
   }
 
   /* footer responsiveness */
